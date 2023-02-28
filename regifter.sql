@@ -29,7 +29,7 @@ CREATE TABLE gifts (
 \echo See details of the table you created
 -- 
 
-DESCRIBE gifts;
+\d gifts;
 
 
 -- 
@@ -37,7 +37,7 @@ DESCRIBE gifts;
 -- 
 
 ALTER TABLE gifts
-CHANGE COLUMN price value INT;
+RENAME COLUMN price TO value;
 
 
 -- 
